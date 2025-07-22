@@ -1,6 +1,6 @@
-# Black-Oil Reservoir Simulation – NORNE Field (Norway)
+# NORNE Reservoir Simulation – Real-Field Black-Oil Model
 
-## Introduction
+## 🔍 Description
 This project uses the open NORNE dataset (from Equinor/NTNU) to simulate oil and gas production in a full-field, offshore Norwegian reservoir. The simulation was conducted using **OPM Flow**, and post-processing was performed in **ResInsight** for 3D grid views and production trend analysis.
 
 ## 🧪 Simulation Highlights
