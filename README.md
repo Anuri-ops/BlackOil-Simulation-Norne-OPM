@@ -78,7 +78,7 @@ This project showcases a black-oil reservoir simulation using the publicly avail
 
 ---
 
-## 👤 Author
+##  Author
 
 **Anuri Nwagbara**  
 
