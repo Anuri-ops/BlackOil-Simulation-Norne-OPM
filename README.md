@@ -1,22 +1,22 @@
-# 🛢️ Black Oil Reservoir Diagnostics – NORNE Field (Norway)
+#  Black Oil Reservoir Diagnostics – NORNE Field (Norway)
 
 This project showcases a black-oil reservoir simulation using the publicly available **NORNE dataset** and the **OPM Flow + ResInsight** toolchain. The focus is on simulating real-field production, analyzing well behavior, and visualizing key reservoir performance metrics.
 
-## 🎯 Objectives
+##  Objectives
 
 - Perform black-oil simulation with the NORNE dataset using OPM Flow
 - Visualize key performance indicators: production, pressure, water breakthrough
 - Compare well performance to identify insights on sweep efficiency and recovery
 - Explore diagnostic metrics such as water cut, GOR, and field-wide trends
 
-## 🧰 Tools & Libraries
+##  Tools & Libraries
 
 - [OPM Flow](https://opm-project.org/) – Reservoir simulator
 - [ResInsight](https://resinsight.org/) – Post-processing and 3D visualization
 - WSL (Ubuntu on Windows)
 - Python (planned for extended analysis)
 
-## 📦 Dataset
+##  Dataset
 
 - **Source**: [OPM Data Repository – NORNE ATW2013](https://opm-project.org/?page_id=559)
 - **Files used**:
@@ -26,9 +26,9 @@ This project showcases a black-oil reservoir simulation using the publicly avail
 
 ---
 
-## 🔍 Key Visualizations
+##  Key Visualizations
 
-### ▶️ 1. Field Total Production
+###  1. Field Total Production
 
 ![Total Oil Production](visuals/total_oil_production.png)
 
@@ -36,7 +36,7 @@ This project showcases a black-oil reservoir simulation using the publicly avail
 
 ---
 
-### ▶️ 2. Grid Structure
+###  2. Grid Structure
 
 ![Grid Structure](visuals/grid_structure.png)
 
@@ -44,7 +44,7 @@ This project showcases a black-oil reservoir simulation using the publicly avail
 
 ---
 
-### ▶️ 3. Well Comparison: E-4AH vs B-4BH
+###  3. Well Comparison: E-4AH vs B-4BH
 
 ![Well Summary Comparison](visuals/well_summary_comparison.png)
 
@@ -54,7 +54,7 @@ This project showcases a black-oil reservoir simulation using the publicly avail
 
 ---
 
-### ▶️ 4. GOR & Water Cut Evolution
+###  4. GOR & Water Cut Evolution
 
 ![Water Cut GOR](visuals/wc_gor.png)
 
@@ -62,7 +62,7 @@ This project showcases a black-oil reservoir simulation using the publicly avail
 
 ---
 
-### ▶️ 5. Injection Diagnostics
+###  5. Injection Diagnostics
 
 ![Field Water Injection Total](visuals/fwit.png)
 
@@ -70,7 +70,7 @@ This project showcases a black-oil reservoir simulation using the publicly avail
 
 ---
 
-## 🧠 Key Learnings
+##  Key Learnings
 
 - Diagnostics from well summaries provide early warning signs of water/gas breakthrough.
 - Visual analytics using ResInsight enables well-to-field scale performance review.
@@ -80,13 +80,10 @@ This project showcases a black-oil reservoir simulation using the publicly avail
 
 ## 👤 Author
 
-**Anuri Nwadinma Chiamaka Nwagbara**  
-MSc Geological Engineering | BSc & PGD Chemical Engineering  
-Location: Norway  
-GitHub: [@anurinwagbara](https://github.com/anurinwagbara)
+**Anuri Nwagbara**  
 
 ---
 
-## 📜 License
+##  License
 
 This repository is for educational and non-commercial use only. NORNE dataset © Equinor & OPM Project.
