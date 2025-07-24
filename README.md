@@ -1,3 +1,4 @@
+
 # NORNE Reservoir Simulation – Flow Diagnostics & Well Performance
 
 This project showcases a diagnostic analysis of black-oil reservoir simulation using the publicly available NORNE dataset and the OPM Flow + ResInsight toolchain. The focus is on simulating field behavior, analyzing well diagnostics, and visualizing key performance metrics.
@@ -6,9 +7,9 @@ This project showcases a diagnostic analysis of black-oil reservoir simulation u
 
 ## Objectives
 
-- Simulate black-oil production using the NORNE dataset with OPM Flow.
-- Visualize performance indicators: production trends, pressure support, water/gas breakthrough.
-- Diagnose well performance using injection data and GOR/water cut evolution.
+- Simulate black-oil production using the NORNE dataset with OPM Flow.  
+- Visualize performance indicators: production trends, pressure support, water/gas breakthrough.  
+- Diagnose well performance using injection data and GOR/Water cut evolution.  
 - Compare early vs. late timestep behavior across selected wells.
 
 ---
@@ -16,7 +17,7 @@ This project showcases a diagnostic analysis of black-oil reservoir simulation u
 ## Tools & Libraries
 
 - [OPM Flow](https://opm-project.org/) – Reservoir simulator  
-- [ResInsight](https://www.resinsight.org/) – Visualization  
+- [ResInsight](https://resinsight.org/) – 3D visualization  
 - WSL2 (Ubuntu on Windows)  
 - Python (planned for extended analysis)
 
@@ -26,7 +27,7 @@ This project showcases a diagnostic analysis of black-oil reservoir simulation u
 
 - Source: [Norne Data Repository – NTNU](https://www.ntnu.edu/ie/norne)  
 - Files used:
-  - `NORNE_ATW2013.EGRID`
+  - `NORNE_ATW2013.DATA`
   - `NORNE_ATW2013.SMSPEC`
 
 ---
@@ -35,13 +36,15 @@ This project showcases a diagnostic analysis of black-oil reservoir simulation u
 
 ### 1. Field Total Production  
 ![Total Production](images/Total_Production_Plot1.png)  
-**Interpretation:** Oil production peaked around timestep 30 (circa 2003), then plateaued before entering a gradual decline. This stabilization phase can be correlated with field-wide injection support.
+**Interpretation:**  
+Oil production peaked around timestep 30 (circa 2002), followed by a plateau and gradual decline. Injection support can be correlated with this stabilization phase.
 
 ---
 
 ### 2. Grid Structure – Early Timestep  
 ![Grid Structure](images/Grid_Structure_SOIL_1997.png)  
-**Interpretation:** Early-time active cells are concentrated within fault-bounded zones. This early timestep captures high oil saturation regions and identifies potential sweep targets.
+**Interpretation:**  
+Active cells are distributed within fault-bounded zones. This early timestep captures high oil saturation regions and identifies potential sweep targets.
 
 ---
 
@@ -56,7 +59,7 @@ This project showcases a diagnostic analysis of black-oil reservoir simulation u
 ### 4. GOR & Water Cut Evolution  
 ![GOR and Water Cut](images/GOR_WaterCut_Evolution.png)  
 **Interpretation:**  
-- Post-breakthrough, GOR increased in B-4BH while water cut surged. Indicates possible gas coning or terminal-phase reservoir behavior.  
+- Post-breakthrough, GOR increased in B-4BH while water cut surged. Suggests gas coning or end-of-life behavior.  
 - E-4AH showed more stable fluid ratios, indicating stronger reservoir support.
 
 ---
@@ -68,14 +71,28 @@ Injection volumes correlate with stabilization periods. Plateauing injection and
 
 ---
 
-## Key Learnings
+## Limitations
 
-- Diagnostics from well summaries and saturation profiles enable early detection of breakthrough.
-- Visualization in ResInsight helps correlate grid-level saturation changes with field-level production.
-- Understanding spatial reservoir heterogeneity supports targeted development planning.
+- The study is based on deterministic black-oil simulation results; no probabilistic or uncertainty quantification was applied.  
+- No history-matching or calibration was performed; this is a forward simulation only.  
+- Diagnostics rely on interpreted visual outputs, not on in-depth reservoir engineering calculations.  
+- Python analysis is currently not implemented — planned as a future enhancement.
 
 ---
 
-**Author:** Anuri Nwagbara  
-**Tools:** OPM Flow, ResInsight, Python (in progress)  
-**Status:** Ongoing
+## Next Steps (Optional / Future Work)
+
+- Integrate Python workflows for time-series analysis and batch visualization.  
+- Run well-level diagnostics for additional injectors and producers.  
+- Conduct comparative analysis between early and late time steps across all well groups.  
+- Explore waterflood optimization or pattern efficiency using streamline-based diagnostics.  
+- Extend analysis to include production forecasting (e.g. using DCA or machine learning).
+
+---
+
+## Status
+
+✅ Completed core diagnostic analysis  
+🚧 Future work optional – this project is currently archived as a reference portfolio
+
+---
