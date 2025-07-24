@@ -80,4 +80,5 @@ Injection volumes correlate with stabilization periods. Plateauing injection and
 ---
 
 © 2025 – Anuri Nwadinma Chiamaka Nwagbara
+
 This project was completed independently using ResInsight and OPM Flow, as part of a technical reservoir simulation portfolio.
