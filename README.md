@@ -75,5 +75,11 @@ Injection volumes correlate with stabilization periods. Plateauing injection and
 - The study is based on deterministic black-oil simulation results; no probabilistic or uncertainty quantification was applied.
 - No history matching or calibration was performed (this is a forward simulation only).
 - Diagnostics rely on interpreted visual plots rather than advanced reservoir engineering equations.
+
+---
+
+© 2025 – Anuri Nwagbara
+
+This portfolio piece was created for demonstration and learning purposes, using publicly available NORNE datasets and open-source tools (OPM Flow, ResInsight).
 - Pattern analysis and automated classification were not implemented.
 
