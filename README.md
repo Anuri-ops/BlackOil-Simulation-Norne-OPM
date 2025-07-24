@@ -9,7 +9,7 @@ This project showcases a diagnostic analysis of black-oil reservoir simulation u
 - Simulate black-oil production using the NORNE dataset with OPM Flow.
 - Visualize performance indicators: production trends, pressure support, water/gas breakthrough.
 - Diagnose well performance using injection data and GOR/water cut evolution.
-- Compare early vs. late timestep behavior across selected wells.
+- Visualize early timestep grid structure to highlight initial sweep potential and oil saturation distribution.
 
 ---
 
@@ -80,3 +80,4 @@ Injection volumes correlate with stabilization periods. Plateauing injection and
 ---
 
 © 2025 – Anuri Nwadinma Chiamaka Nwagbara
+This project was completed independently using ResInsight and OPM Flow, as part of a technical reservoir simulation portfolio.
