@@ -35,7 +35,7 @@ This project showcases a diagnostic analysis of black-oil reservoir simulation u
 
 ### 1. Field Total Production  
 ![Total Production](images/Total_Production_Plot1.png)  
-**Interpretation:** Oil production peaked around timestep XXX, followed by a plateau and gradual decline. Injection support can be correlated with this stabilization phase.
+**Interpretation:** Oil production peaked around timestep 30 (circa 2002), followed by a plateau and gradual decline. Injection support can be correlated with this stabilization phase.
 
 ---
 
