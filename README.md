@@ -1,89 +1,81 @@
-#  Black Oil Reservoir Diagnostics – NORNE Field (Norway)
+# NORNE Reservoir Simulation – Flow Diagnostics & Well Performance
 
-This project showcases a black-oil reservoir simulation using the publicly available **NORNE dataset** and the **OPM Flow + ResInsight** toolchain. The focus is on simulating real-field production, analyzing well behavior, and visualizing key reservoir performance metrics.
+This project showcases a diagnostic analysis of black-oil reservoir simulation using the publicly available NORNE dataset and the OPM Flow + ResInsight toolchain. The focus is on simulating field behavior, analyzing well diagnostics, and visualizing key performance metrics.
 
-##  Objectives
+---
 
-- Perform black-oil simulation with the NORNE dataset using OPM Flow
-- Visualize key performance indicators: production, pressure, water breakthrough
-- Compare well performance to identify insights on sweep efficiency and recovery
-- Explore diagnostic metrics such as water cut, GOR, and field-wide trends
+## Objectives
 
-##  Tools & Libraries
+- Simulate black-oil production using the NORNE dataset with OPM Flow.
+- Visualize performance indicators: production trends, pressure support, water/gas breakthrough.
+- Diagnose well performance using injection data and GOR/water cut evolution.
+- Compare early vs. late timestep behavior across selected wells.
 
-- [OPM Flow](https://opm-project.org/) – Reservoir simulator
-- [ResInsight](https://resinsight.org/) – Post-processing and 3D visualization
-- WSL (Ubuntu on Windows)
+---
+
+## Tools & Libraries
+
+- [OPM Flow](https://opm-project.org/) – Reservoir simulator  
+- [ResInsight](https://www.resinsight.org/) – Visualization  
+- WSL2 (Ubuntu on Windows)  
 - Python (planned for extended analysis)
 
-##  Dataset
+---
 
-- **Source**: [OPM Data Repository – NORNE ATW2013](https://opm-project.org/?page_id=559)
-- **Files used**:
-  - `NORNE_ATW2013.DATA`
-  - `EGRID`, `SMSPEC`, `UNRST` (for visualization in ResInsight)
-- **Disclaimer**: All data is publicly provided by the OPM project and Equinor for research and academic purposes.
+## Dataset
+
+- Source: [Norne Data Repository – NTNU](https://www.ntnu.edu/ie/norne)  
+- Files used:
+  - `NORNE_ATW2013.EGRID`
+  - `NORNE_ATW2013.SMSPEC`
 
 ---
 
-##  Key Visualizations
+## Key Visualizations
 
-###  1. Field Total Production
-
-![Total Oil Production](visuals/total_oil_production.png)
-
-**Interpretation**: Field oil production peaked around timestep XXX, followed by a steady decline. Injection support can be correlated with pressure stabilization over time.
+### 1. Field Total Production  
+![Total Production](images/Total_Production_Plot.png)  
+**Interpretation:** Oil production peaked around timestep XXX, followed by a plateau and gradual decline. Injection support can be correlated with this stabilization phase.
 
 ---
 
-###  2. Grid Structure
-
-![Grid Structure](visuals/grid_structure.png)
-
-**Interpretation**: Active cells are distributed in fault-bounded compartments. The vertical layering captures key zones for oil saturation and fluid flow.
+### 2. Grid Structure – Early Timestep  
+![Grid Structure](images/Grid_Structure_SOIL_1997.png)  
+**Interpretation:** Active cells are distributed within fault-bounded zones. This early timestep captures high oil saturation regions and identifies potential sweep targets.
 
 ---
 
-###  3. Well Comparison: E-4AH vs B-4BH
-
-![Well Summary Comparison](visuals/well_summary_comparison.png)
-
-**Interpretation**:  
-- **E-4AH**: Stable BHP and late water breakthrough indicate a productive zone.  
-- **B-4BH**: Earlier WWCT increase, steeper decline in oil rate. Suggests faster sweep or coning issues.
+### 3. Well Comparison – E-4AH vs B-4BH  
+![Well Summary](images/Well_Summary_Comparison_E4AH_B4BH.png)  
+**Interpretation:**  
+- **E-4AH**: Stable BHP and late water breakthrough. Indicates productive, pressure-supported zone.  
+- **B-4BH**: Earlier breakthrough and steeper decline. May suggest poor connectivity or sweep inefficiency.
 
 ---
 
-###  4. GOR & Water Cut Evolution
-
-![Water Cut GOR](visuals/wc_gor.png)
-
-**Interpretation**: GOR trends upward for B-4BH post breakthrough, while water cut sharply rises. This indicates gas coning or late-stage water dominance.
-
----
-
-###  5. Injection Diagnostics
-
-![Field Water Injection Total](visuals/fwit.png)
-
-**Interpretation**: Injection volumes correlate with production plateaus and reservoir pressure control during the mid-phase of production.
+### 4. GOR & Water Cut Evolution  
+![GOR and Water Cut](images/GOR_WaterCut_Evolution.png)  
+**Interpretation:**  
+- Post-breakthrough, GOR increased in B-4BH while water cut surged. Suggests gas coning or end-of-life behavior.  
+- E-4AH showed more stable fluid ratios, indicating stronger reservoir support.
 
 ---
 
-##  Key Learnings
-
-- Diagnostics from well summaries provide early warning signs of water/gas breakthrough.
-- Visual analytics using ResInsight enables well-to-field scale performance review.
-- Understanding the reservoir compartmentalization helps in explaining differences between well performance.
-
----
-
-##  Author
-
-**Anuri Nwagbara**  
+### 5. Field Water Injection (FWIT)  
+![Water Injection](images/FieldWater_Injection_Total.png)  
+**Interpretation:**  
+Injection volumes correlate with stabilization periods. Plateauing injection and BHP values reflect pressure maintenance strategy.
 
 ---
 
-##  License
+## Key Learnings
 
-This repository is for educational and non-commercial use only. NORNE dataset © Equinor & OPM Project.
+- Diagnostics from well summaries and saturation profiles enable early detection of breakthrough.
+- Visualization in ResInsight helps correlate grid-level saturation changes with field-level production.
+- Understanding spatial reservoir heterogeneity supports targeted development planning.
+
+---
+
+**Author:** Anuri Nwagbara  
+**Tools:** OPM Flow, ResInsight, Python (in progress)  
+**Status:** Ongoing
