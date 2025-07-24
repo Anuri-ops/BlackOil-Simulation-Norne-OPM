@@ -35,13 +35,13 @@ This project showcases a diagnostic analysis of black-oil reservoir simulation u
 
 ### 1. Field Total Production  
 ![Total Production](images/Total_Production_Plot1.png)  
-**Interpretation:** Oil production peaked around timestep 30 (circa 2002), followed by a plateau and gradual decline. Injection support can be correlated with this stabilization phase.
+**Interpretation:** Oil production peaked around timestep 30 (circa 2003), then plateaued before entering a gradual decline. This stabilization phase can be correlated with field-wide injection support.
 
 ---
 
 ### 2. Grid Structure – Early Timestep  
 ![Grid Structure](images/Grid_Structure_SOIL_1997.png)  
-**Interpretation:** Active cells are distributed within fault-bounded zones. This early timestep captures high oil saturation regions and identifies potential sweep targets.
+**Interpretation:** Early-time active cells are concentrated within fault-bounded zones. This early timestep captures high oil saturation regions and identifies potential sweep targets.
 
 ---
 
@@ -56,7 +56,7 @@ This project showcases a diagnostic analysis of black-oil reservoir simulation u
 ### 4. GOR & Water Cut Evolution  
 ![GOR and Water Cut](images/GOR_WaterCut_Evolution.png)  
 **Interpretation:**  
-- Post-breakthrough, GOR increased in B-4BH while water cut surged. Suggests gas coning or end-of-life behavior.  
+- Post-breakthrough, GOR increased in B-4BH while water cut surged. Indicates possible gas coning or terminal-phase reservoir behavior.  
 - E-4AH showed more stable fluid ratios, indicating stronger reservoir support.
 
 ---
