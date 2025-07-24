@@ -10,6 +10,7 @@ This project showcases a diagnostic analysis of black-oil reservoir simulation u
 - Visualize performance indicators: production trends, pressure support, water/gas breakthrough.
 - Diagnose well performance using injection data and GOR/water cut evolution.
 - Visualize early timestep grid structure to highlight initial sweep potential and oil saturation distribution.
+- Lay groundwork for future analysis using Python-based tools for automation and data extraction.
 
 ---
 
@@ -18,7 +19,7 @@ This project showcases a diagnostic analysis of black-oil reservoir simulation u
 - [OPM Flow](https://opm-project.org/) – Reservoir simulator  
 - [ResInsight](https://resinsight.org/) – Visualization  
 - WSL2 (Ubuntu on Windows)  
-- Python (planned for extended analysis only)  
+- Python (for potential post-processing and automation)  
 
 ---
 
